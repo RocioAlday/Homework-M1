@@ -15,8 +15,8 @@ String.prototype.repeatify = function(numero){
 
 
 class Shape {
-    constructor(){
-    this.type= 'Shape';
+    constructor(tipo){
+    this.type= tipo;
     this.getType= function(){
         return this.type;
     }
@@ -32,8 +32,7 @@ var Shape= {
 
 class Triangle extends Shape {
     constructor(a, b, c){
-        super();
-        this.type= 'Triangle';
+        super('Triangle');
         this.a=a;
         this.b=b;
         this.c=c;
@@ -66,8 +65,7 @@ console.log (t.getType());
 
 class Circle extends Shape {
     constructor(r){
-        super();
-        this.type= "Circle";
+        super('Circle');
         this.radio=r;
 }
 getPerimeter(){
