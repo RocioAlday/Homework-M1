@@ -83,4 +83,3 @@ console.log (c.getPerimeter());
 // 12.566370614359172
 console.log (c.getType());
 // "Circle"
-
